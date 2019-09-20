@@ -1,0 +1,124 @@
+/*base css*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+html{
+	background: url(../image/printemps.png) no-repeat fixed center center / cover; 
+}
+body{
+	font: 16px 'Roboto',sans-serif;
+	margin: 0;
+
+}
+/*contexte block*/
+h1,
+h2,
+p,
+blockquote{
+ margin:0;
+ font-weight: 300;
+}
+abbr,a{
+	text-decoration: none;
+}
+summary,a{
+	outline: none;
+}
+/*thème*/
+h1{
+	position:fixed;/*ajouter après*/
+	left :0;
+	right: 0;
+	text-align: center;
+	background: #0288D1;/*couleur du fond*/
+	color: #fff;/*couleur du texte*/
+	line-height: 60px;
+	z-index:1;
+	box-shadow: 5px 0 8px rgba(0,0,0,0.8);
+
+}
+h1::before{
+	content:'\2764';
+	margin-right: 5px;
+}
+main{
+	padding-top:100px;
+}
+p,address,blockquote,details{
+	position: sticky; /*ajouter après*/
+	top:0;
+	width: 800px;
+	margin:0 auto 20px;
+	/*border: solid 1px #ccc;*/
+	background: #E1F5FE;
+	padding: 10px;
+	line-height: 22px;
+	font-style: normal;
+	font-weight: lighter;
+
+}
+p>strong,p > b{
+	color: #1565C0;
+}
+blockquote > p{
+	margin:0;
+	width: auto;
+	padding: 0;
+
+}
+hr{
+	border: none;
+	background: #ccc;
+	height: 1px;
+	margin:10px 0;
+}
+p > img{
+	display: block;
+	max-width: 100%;
+}
+p > a{
+	display: block;
+	width: 200px;
+	text-align: center;
+	color: #fff;
+	background: #0288D1;
+	line-height: 35px;
+	margin: 8px auto 0;
+	border-radius: 4px;
+	transition-duration: 0.8s;
+}
+p > a:hover{
+		filter: brightness(0.7);
+}
+summary,address>span{
+	color: #0288D1;
+	font-weight: bolder;
+
+}
+summary>span{
+	color:#222;
+}
+details > ul{
+	padding:0;
+	list-style: none;
+	margin:0;
+}
+details ul > li{
+	background: #0288D1;
+	color: #fff;
+	padding:5px;
+	margin-bottom: 1px;
+}
+details ul > li + li{
+	background: #01579B;
+}
+details ul > li + li + li{
+	background:  #0288D1;
+}
+details ul > li:last-child{
+	background: #01579B;
+	margin:0;
+}
+
+
+
+
+
